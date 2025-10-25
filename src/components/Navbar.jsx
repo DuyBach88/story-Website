@@ -63,6 +63,12 @@ export default function Navbar() {
           >
             Chiến Thắng
           </button>
+          <button
+            onClick={() => scrollToSection("game")} // Đảm bảo id khớp
+            className="hover:text-amber-600 transition"
+          >
+            Chơi Game
+          </button>
         </div>
 
         <button className="md:hidden text-[#0F172A]/80 hover:text-amber-600 transition text-xl">
