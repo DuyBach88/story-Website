@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaFlagCheckered, FaLightbulb, FaBook } from "react-icons/fa";
+import { FaLightbulb, FaBook } from "react-icons/fa";
 
-// Đã đổi tên component thành PhaseAnalysisBlock3 và nhận prop onNext
+// FULL PAGE JSX — PhaseAnalysisBlock3 (Warm Victory • VintageColor • NoBlur • TopDown)
 export default function PhaseAnalysisBlock3({ onNext }) {
   const points = [
     {
@@ -23,9 +23,21 @@ export default function PhaseAnalysisBlock3({ onNext }) {
   ];
 
   return (
-    <section className="w-full bg-slate-950 text-slate-100 py-24">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Tiêu đề chính */}
+    <section
+      className="w-full min-h-screen bg-cover bg-center bg-fixed text-slate-100 relative"
+      style={{ backgroundImage: "url('/images/hanoi-vintage-1972.jpg')" }}
+    >
+      {/* TopDown warm overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-transparent" />
+
+      {/* Optional very-light film grain for cinematic depth */}
+      <div
+        className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-20"
+        style={{ backgroundImage: "url('/images/film-grain.png')", backgroundSize: 'cover' }}
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,13 +49,13 @@ export default function PhaseAnalysisBlock3({ onNext }) {
             Điểm Gãy Chiến Lược
           </p>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight text-white">
-            Khi B-52 rơi, ưu thế tuyệt đối của Mỹ{" "}
+            Khi B-52 rơi, ưu thế tuyệt đối của Mỹ{' '}
             <span className="text-amber-400">bị làm rạn vỡ về chính trị.</span>
           </h2>
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Cột các điểm chính */}
+          {/* Left: Main points */}
           <div className="lg:col-span-2 space-y-6">
             {points.map((point, index) => (
               <motion.div
@@ -52,47 +64,39 @@ export default function PhaseAnalysisBlock3({ onNext }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                // Nền card tối hơn, tăng tương phản
-                className="bg-slate-900 border border-slate-800 rounded-xl p-6"
+                className="bg-slate-900/70 border border-slate-800/60 rounded-xl p-6 backdrop-blur-[0.5px]"
               >
                 <div className="flex items-center gap-4 mb-3">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 flex items-center justify-center font-bold">
                     {index + 1}
                   </div>
-                  <h3 className="text-2xl font-bold text-white">
-                    {point.title}
-                  </h3>
+                  <h3 className="text-2xl font-bold text-white">{point.title}</h3>
                 </div>
                 <p
-                  // Chữ màu trắng/xám nhạt (text-slate-300) để đảm bảo độ tương phản cao trên nền đen
-                  className="text-slate-300 leading-relaxed"
+                  className="text-slate-200/90 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: point.content }}
                 />
               </motion.div>
             ))}
           </div>
 
-          {/* Cột tóm tắt và gợi ý */}
+          {/* Right: Summary & reading */}
           <div className="space-y-6">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-slate-900 border border-slate-800 rounded-xl p-6"
+              className="bg-slate-900/70 border border-slate-800/60 rounded-xl p-6 backdrop-blur-[0.5px]"
             >
               <div className="flex items-center gap-3 mb-3">
                 <FaLightbulb className="text-amber-400" />
-                <h4 className="font-semibold text-white">
-                  Tóm tắt cho người xem
-                </h4>
+                <h4 className="font-semibold text-white">Tóm tắt cho người xem</h4>
               </div>
-              <ul className="list-disc list-inside space-y-2 text-sm text-slate-300">
+              <ul className="list-disc list-inside space-y-2 text-sm text-slate-200/90">
                 <li>Thất bại B-52 = Thất bại về mặt biểu tượng.</li>
                 <li>Hỏa lực không thắng được ý chí.</li>
-                <li>
-                  Chiến thắng phòng không mở đường cho thắng lợi ngoại giao.
-                </li>
+                <li>Chiến thắng phòng không mở đường cho thắng lợi ngoại giao.</li>
               </ul>
             </motion.div>
 
@@ -101,21 +105,20 @@ export default function PhaseAnalysisBlock3({ onNext }) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.35 }}
-              className="bg-slate-900 border border-slate-800 rounded-xl p-6"
+              className="bg-slate-900/70 border border-slate-800/60 rounded-xl p-6 backdrop-blur-[0.5px]"
             >
               <div className="flex items-center gap-3 mb-3">
                 <FaBook className="text-amber-400" />
                 <h4 className="font-semibold text-white">Gợi ý đọc thêm</h4>
               </div>
-              <p className="text-sm text-slate-300">
-                Nghiên cứu về học thuyết chiến tranh bất đối xứng và vai trò của
-                tâm lý chiến trong các cuộc xung đột hiện đại.
+              <p className="text-sm text-slate-200/90">
+                Nghiên cứu về học thuyết chiến tranh bất đối xứng và vai trò của tâm lý chiến trong các cuộc xung đột hiện đại.
               </p>
             </motion.div>
           </div>
         </div>
 
-        {/* Nút hành động */}
+        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -123,7 +126,6 @@ export default function PhaseAnalysisBlock3({ onNext }) {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="text-center mt-16"
         >
-          {/* Nút chính, sử dụng màu Amber mạnh */}
           <motion.button
             onClick={onNext}
             whileHover={{ scale: 1.05 }}

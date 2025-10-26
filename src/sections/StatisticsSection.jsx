@@ -1,8 +1,6 @@
-// Tạo file mới: src/sections/StatisticsSection.jsx
-
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPlane, FaUsers, FaHome } from "react-icons/fa";
+import { FaPlane, FaHome, FaUsers } from "react-icons/fa";
 
 export default function StatisticsSection({ onNext }) {
   return (
@@ -22,19 +20,31 @@ export default function StatisticsSection({ onNext }) {
             Phần 5: Những Con Số Biết Nói
           </h2>
           <p className="mt-4 text-slate-600">
-            Đây là cuộc tập kích đường không lớn nhất trong lịch sử chiến tranh
-            hiện đại, và Hà Nội là nơi gánh chịu sức nặng của nó.
+            Cuộc tập kích đường không lớn nhất trong lịch sử chiến tranh hiện
+            đại — và Hà Nội là nơi đứng thẳng giữa tâm bão.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Cột 1: Quy mô của Mỹ */}
+          {/* Cột trái: Mỹ */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="bg-white p-8 rounded-xl shadow-lg border"
           >
+            {/* Ảnh Polaroid */}
+            <div className="bg-white rounded-lg shadow-sm border mb-6 p-2">
+              <img
+                src="https://cdn.tienphong.vn/images/a6bf4f60924201126af6849ca45a3980d94490e877d71d796f695a6dee03aa70b914a42b9a8cb8fed1aa89504bd47a823e12487b858470f9416368c638ac0211/ban-nhau-4761-6050.jpg"
+                alt="Đội hình B-52 của Mỹ"
+                className="w-full aspect-square object-cover rounded"
+              />
+              <p className="text-center text-xs text-slate-500 mt-2">
+                Đội hình B-52 tham chiến tại Đông Dương (ảnh tư liệu phục dựng).
+              </p>
+            </div>
+
             <h3 className="text-2xl font-bold mb-6 text-blue-700">
               Quy mô huy động của Mỹ
             </h3>
@@ -44,8 +54,7 @@ export default function StatisticsSection({ onNext }) {
                 <div>
                   <p className="font-bold text-xl">193/400 B-52</p>
                   <p className="text-slate-600">
-                    Gần một nửa tổng số B-52 của không quân chiến lược Mỹ đã
-                    được huy động.
+                    Gần một nửa tổng số B-52 chiến lược của Mỹ đã được huy động.
                   </p>
                 </div>
               </div>
@@ -56,21 +65,32 @@ export default function StatisticsSection({ onNext }) {
                     ~4.000 lượt máy bay chiến thuật
                   </p>
                   <p className="text-slate-600">
-                    Các máy bay chiến thuật yểm trợ, gây nhiễu và tấn công bổ
-                    sung.
+                    Bao gồm gây nhiễu, hộ tống, trinh sát và tấn công bổ sung.
                   </p>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Cột 2: Thiệt hại ở Hà Nội */}
+          {/* Cột phải: Hà Nội */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="bg-white p-8 rounded-xl shadow-lg border"
           >
+            <div className="bg-white rounded-lg shadow-sm border mb-6 p-2">
+              <img
+                src="https://vanhoavaphattrien.vn/zoom-share/1200x630/uploads/images/2021/12/27/hn1972-1640582431.jpg"
+                alt="Phố Khâm Thiên sau bom"
+                className="w-full aspect-square object-cover rounded"
+              />
+              <p className="text-center text-xs text-slate-500 mt-2">
+                Hà Nội – Phố Khâm Thiên sau trận bom 1972 (ảnh tư liệu phục
+                dựng).
+              </p>
+            </div>
+
             <h3 className="text-2xl font-bold mb-6 text-red-700">
               Gánh nặng Hà Nội gánh chịu
             </h3>
@@ -80,7 +100,7 @@ export default function StatisticsSection({ onNext }) {
                 <div>
                   <p className="font-bold text-xl">5.480 nhà sập</p>
                   <p className="text-slate-600">
-                    Khoảng 10.000 tấn bom được ném xuống Hà Nội.
+                    Khoảng 10.000 tấn bom được trút xuống chỉ riêng Hà Nội.
                   </p>
                 </div>
               </div>
@@ -91,8 +111,8 @@ export default function StatisticsSection({ onNext }) {
                     2.368 người chết, 1.355 người bị thương
                   </p>
                   <p className="text-slate-600">
-                    Thương vong chủ yếu là dân thường, bao gồm cả ở phố Khâm
-                    Thiên và bệnh viện Bạch Mai.
+                    Phần lớn là dân thường – trong đó có trẻ em, phụ nữ, bệnh
+                    viện, khu dân cư.
                   </p>
                 </div>
               </div>

@@ -5,14 +5,10 @@ import React, { useState, useEffect } from "react";
 // Các component chính của trang
 import Hero from "../sections/Hero";
 import ScrollHint from "../components/ScrollHint";
-import Strategy from "../sections/Strategy.jsx";
-import Battle from "../sections/Battle.jsx";
-import Victory from "../sections/Victory.jsx";
-import Game from "../sections/Game.jsx";
-import ContextIntro from "../sections/ContextIntro.jsx";
+import ContextIntror from "../sections/ContextIntror.jsx";
 import ContextDetail from "../sections/ContextDetail.jsx";
 import PhaseTwo from "../sections/PhaseTwo.jsx";
-
+import Game from "../sections/Game.jsx";
 // Các component cho từng mốc thời gian và chuỗi phân tích
 import Phase1812 from "../sections/Phase1812.jsx";
 import Phase2612 from "../sections/Phase2612.jsx";
@@ -95,9 +91,6 @@ export default function Home() {
           }
         })()}
       </div>
-      <ContextIntro nextId="context-detail" />
-      <ContextDetail />
-      <Strategy />
       <Game />
       {/*
       <Battle />
