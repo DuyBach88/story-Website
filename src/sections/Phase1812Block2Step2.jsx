@@ -240,7 +240,9 @@ export default function Phase1812Block2Step2({ onNext }) {
                 .getElementById("phase-2")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="px-6 py-3 border-2 border-slate-300 text-slate-700 rounded-full hover:bg-slate-100 transition"
+            className="px-6 py-3 border border-amber-400/40 text-amber-300 rounded-full 
+             hover:bg-amber-400/20 hover:border-amber-400 transition 
+             backdrop-blur-sm"
           >
             ← Quay lại danh sách mốc
           </button>

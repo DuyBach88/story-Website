@@ -15,11 +15,11 @@ import Phase2612 from "../sections/Phase2612.jsx";
 import FinalDaysSection from "../sections/FinalDaysSection.jsx";
 import PhaseAnalysisBlock1 from "../sections/PhaseAnalysisBlock1.jsx";
 import PhaseAnalysisBlock2 from "../sections/PhaseAnalysisBlock2.jsx";
-import PhaseAnalysisBlock3 from "../sections/PhaseAnalysisBlock3";
 import QuizSection from "../sections/QuizSection.jsx";
 import StatisticsSection from "../sections/StatisticsSection.jsx";
 import ParisAccordsSection from "../sections/ParisAccordsSection.jsx";
 import ConclusionSection from "../sections/ConclusionSection.jsx";
+import PhaseAnalysisTest3 from "../sections/PhaseAnalysisTest3.jsx";
 
 export default function Home() {
   const [storyStep, setStoryStep] = useState(0);
@@ -76,7 +76,7 @@ export default function Home() {
             case 5:
               return <PhaseAnalysisBlock2 onNext={handleNextStep} />;
             case 6:
-              return <PhaseAnalysisBlock3 onNext={handleNextStep} />;
+              return <PhaseAnalysisTest3 onNext={handleNextStep} />;
             case 7:
               return <QuizSection onComplete={handleNextStep} />;
             case 8:

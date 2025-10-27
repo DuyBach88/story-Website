@@ -67,7 +67,7 @@ export default function PhaseAnalysisBlock1({ onNext }) {
           className="rounded-xl overflow-hidden shadow-2xl"
         >
           <img
-            src="/assets/analyse_b52.jpg"
+            src="../../public/assets/analyse_b52.jpg"
             alt="Chủ tịch Hồ Chí Minh đang phân tích chiến lược"
             className="w-full h-full object-cover"
           />

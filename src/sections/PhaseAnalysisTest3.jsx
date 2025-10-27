@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaLightbulb, FaBook } from "react-icons/fa";
 
 // FULL PAGE JSX — PhaseAnalysisBlock3 (Warm Victory • VintageColor • NoBlur • TopDown)
-export default function PhaseAnalysisBlock3({ onNext }) {
+export default function PhaseAnalysisTest3({ onNext }) {
   const points = [
     {
       title: "Ưu thế không quân ≠ tất thắng",
@@ -34,7 +34,10 @@ export default function PhaseAnalysisBlock3({ onNext }) {
       {/* Optional very-light film grain for cinematic depth */}
       <div
         className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-20"
-        style={{ backgroundImage: "url('/images/film-grain.png')", backgroundSize: 'cover' }}
+        style={{
+          backgroundImage: "url('/images/film-grain.png')",
+          backgroundSize: "cover",
+        }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-24">
@@ -50,7 +53,7 @@ export default function PhaseAnalysisBlock3({ onNext }) {
             Điểm Gãy Chiến Lược
           </p>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight text-white">
-            Khi B-52 rơi, ưu thế tuyệt đối của Mỹ{' '}
+            Khi B-52 rơi, ưu thế tuyệt đối của Mỹ{" "}
             <span className="text-amber-400">bị làm rạn vỡ về chính trị.</span>
           </h2>
         </motion.div>
@@ -71,7 +74,9 @@ export default function PhaseAnalysisBlock3({ onNext }) {
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 flex items-center justify-center font-bold">
                     {index + 1}
                   </div>
-                  <h3 className="text-2xl font-bold text-white">{point.title}</h3>
+                  <h3 className="text-2xl font-bold text-white">
+                    {point.title}
+                  </h3>
                 </div>
                 <p
                   className="text-slate-200/90 leading-relaxed"
@@ -92,12 +97,16 @@ export default function PhaseAnalysisBlock3({ onNext }) {
             >
               <div className="flex items-center gap-3 mb-3">
                 <FaLightbulb className="text-amber-400" />
-                <h4 className="font-semibold text-white">Tóm tắt cho người xem</h4>
+                <h4 className="font-semibold text-white">
+                  Tóm tắt cho người xem
+                </h4>
               </div>
               <ul className="list-disc list-inside space-y-2 text-sm text-slate-200/90">
                 <li>Thất bại B-52 = Thất bại về mặt biểu tượng.</li>
                 <li>Hỏa lực không thắng được ý chí.</li>
-                <li>Chiến thắng phòng không mở đường cho thắng lợi ngoại giao.</li>
+                <li>
+                  Chiến thắng phòng không mở đường cho thắng lợi ngoại giao.
+                </li>
               </ul>
             </motion.div>
 
@@ -113,7 +122,8 @@ export default function PhaseAnalysisBlock3({ onNext }) {
                 <h4 className="font-semibold text-white">Gợi ý đọc thêm</h4>
               </div>
               <p className="text-sm text-slate-200/90">
-                Nghiên cứu về học thuyết chiến tranh bất đối xứng và vai trò của tâm lý chiến trong các cuộc xung đột hiện đại.
+                Nghiên cứu về học thuyết chiến tranh bất đối xứng và vai trò của
+                tâm lý chiến trong các cuộc xung đột hiện đại.
               </p>
             </motion.div>
           </div>
