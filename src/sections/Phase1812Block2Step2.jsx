@@ -150,7 +150,7 @@ export default function Phase1812Block2Step2({ onNext }) {
           </p>
           <div className="rounded-lg overflow-hidden bg-white">
             <img
-              src="https://theplayersaid.com/wp-content/uploads/2022/12/linebacker-ii-aviation-chart-map.gif?w=688"
+              src="https://nvskcms.vnanet.vn/MediaUpload/Org/2023/06/07/anh-27-15-4-54.jpg"
               alt="Bản đồ chiến thuật Hà Nội 1972"
               className="w-full h-auto"
               loading="eager"
@@ -222,18 +222,6 @@ export default function Phase1812Block2Step2({ onNext }) {
 
         {/* Navigation buttons */}
         <div className="flex flex-wrap gap-4 justify-center">
-          <button
-            onClick={onNext}
-            className="px-8 py-4 bg-amber-500 text-slate-950 font-bold rounded-full hover:bg-amber-400 transition-all hover:shadow-lg flex items-center gap-2"
-          >
-            Tiếp: Các mốc tiếp theo
-            <motion.span
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            >
-              →
-            </motion.span>
-          </button>
           <button
             onClick={() => {
               document

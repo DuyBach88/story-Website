@@ -21,14 +21,14 @@ export default function PhaseTwo({ onJumpToStep }) {
     {
       key: 2, // Step 2: 25/12
       tag: "Tạm ngưng ném bom",
-      title: "25/12/1972",
+      title: "26/12/1972",
       prompt:
         "Vì sao tạm dừng? Tuyên bố nhân đạo hay điều chỉnh thế trận cho đòn kế tiếp?",
     },
     {
       key: 3, // Step 3: 26/12
       tag: "Ác liệt nhất",
-      title: "26/12/1972",
+      title: "27/12/1972",
       prompt:
         "Ta đảo chiều hay tiêu hao? Mỹ phạm sai lầm cốt lõi nào trong đêm này?",
     },

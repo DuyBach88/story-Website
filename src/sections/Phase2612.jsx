@@ -77,7 +77,7 @@ export default function Phase2612({ onNextPhaseAnalysis }) {
 
               <div className="rounded-lg overflow-hidden mb-6 border border-slate-200">
                 <img
-                  src="https://theplayersaid.com/wp-content/uploads/2022/12/linebacker-ii-aviation-chart-map.gif?w=688"
+                  src="https://nvskcms.vnanet.vn/MediaUpload/Org/2023/06/07/anh-27-15-4-54.jpg"
                   alt="Bản đồ chiến thuật: trục bay B-52 và vị trí trận địa"
                   className="w-full h-auto"
                 />

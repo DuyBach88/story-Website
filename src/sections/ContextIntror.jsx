@@ -7,9 +7,9 @@ export default function ContextIntror({ nextId = "context-detail" }) {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    const audio = new Audio("/assets/radio-ambient.mp3");
+    const audio = new Audio("/assets/siren.mp3");
     audio.loop = true;
-    audio.volume = 0.0; // start from 0 → for fade-in
+    audio.volume = 1;
     audioRef.current = audio;
     return () => {
       try {
