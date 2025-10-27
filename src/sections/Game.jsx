@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import RadarGame from "../components/RadarGame";

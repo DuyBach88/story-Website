@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Updated Phase1812Block2Step2.jsx with enhanced list/item animations and minimap pulse, and added details about SAM S-75
 import React from "react";
 import { motion } from "framer-motion";

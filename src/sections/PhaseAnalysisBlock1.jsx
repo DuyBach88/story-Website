@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/sections/PhaseAnalysisBlock1.jsx
 import React from "react";
 import { motion } from "framer-motion";

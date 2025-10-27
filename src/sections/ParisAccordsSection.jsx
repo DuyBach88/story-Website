@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Tạo file mới: src/sections/ParisAccordsSection.jsx
 
 import React from "react";

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/sections/PhaseAnalysisBlock2.jsx
 
 import React from "react";

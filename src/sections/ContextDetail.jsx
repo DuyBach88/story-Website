@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   FaQuoteLeft,
@@ -21,6 +22,7 @@ function PrequelContentBlock({
   children,
   color,
   title,
+  // eslint-disable-next-line no-unused-vars
   icon: Icon,
   delay = 0,
 }) {

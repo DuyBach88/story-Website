@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/sections/QuizSection.jsx
 
 import React, { useState } from "react";

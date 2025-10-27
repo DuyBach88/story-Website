@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Updated Phase1812Block2Step1.jsx with lively text animations
 import React from "react";
 import { motion } from "framer-motion";
