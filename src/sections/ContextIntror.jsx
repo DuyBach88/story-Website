@@ -8,7 +8,7 @@ export default function ContextIntror({ nextId = "context-detail" }) {
 
   useEffect(() => {
     const audio = new Audio("/assets/siren.mp3");
-    audio.loop = true;
+    audio.loop = false;
     audio.volume = 1;
     audioRef.current = audio;
     return () => {
