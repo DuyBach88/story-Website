@@ -67,7 +67,7 @@ export default function FinalDaysSection({ onNext }) {
             </h4>
             <div className="relative h-72 rounded overflow-hidden bg-black/30">
               <img
-                src="/images/tactical-b52-map.jpg"
+                src="../../public/assets/58817d70aee623b87af7.jpg"
                 alt="Tactical Map"
                 className="absolute inset-0 w-full h-full object-cover opacity-50"
               />
