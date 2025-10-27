@@ -15,7 +15,7 @@ import Phase2612 from "../sections/Phase2612.jsx";
 import FinalDaysSection from "../sections/FinalDaysSection.jsx";
 import PhaseAnalysisBlock1 from "../sections/PhaseAnalysisBlock1.jsx";
 import PhaseAnalysisBlock2 from "../sections/PhaseAnalysisBlock2.jsx";
-import PhaseAnalysisBlock3 from "../sections/PhaseAnalysisBlock3.jsx";
+import PhaseAnalysisBlock3 from "../sections/PhaseAnalysisBlock3";
 import QuizSection from "../sections/QuizSection.jsx";
 import StatisticsSection from "../sections/StatisticsSection.jsx";
 import ParisAccordsSection from "../sections/ParisAccordsSection.jsx";
